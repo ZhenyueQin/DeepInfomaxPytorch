@@ -1,5 +1,5 @@
 import torch
-from models import Encoder, GlobalDiscriminator, LocalDiscriminator, PriorDiscriminator
+from .models import Encoder, GlobalDiscriminator, LocalDiscriminator, PriorDiscriminator
 from torchvision.datasets.cifar import CIFAR10
 from torch.utils.data import DataLoader
 from torchvision.transforms import ToTensor
