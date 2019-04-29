@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader, Subset
 from torchvision.transforms import ToTensor, ToPILImage
 from tqdm import tqdm
 import random
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 import numpy as np
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -73,8 +73,8 @@ def display(subject, ordered):
 
     _img = np.concatenate((panel_of_subject, panel_of_nearest_10, panel_of_farthest_10), axis=0)
 
-    plt.imshow(_img)
-    plt.show()
+    # plt.imshow(_img)
+    # plt.show()
 
 
 while True:
